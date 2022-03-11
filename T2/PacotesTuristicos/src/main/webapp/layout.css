@@ -1,0 +1,81 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(241, 217, 217);
+}
+
+h1, h2, h3, .table-header, .filtros {
+    color: rgb(226, 64, 64);
+}
+
+h2::first-letter {
+    font-size: larger;
+    font-family: Brush Script MT;
+}
+
+a:hover {
+    background-color: rgb(255, 122, 122);
+}
+
+a:link {
+    color: currentColor;
+}
+
+a:visited {
+    color: rgb(190, 0, 0);
+}
+
+#form-pacote, #form-agencia, #form-cliente {
+    color: rgb(226, 64, 64);
+    font-weight: bold;
+}
+
+.button {
+    background-color: rgb(255, 158, 158);
+    color: rgb(190, 0, 0);
+    font-weight: bold;
+    border-color: rgb(190, 0, 0);
+}
+
+.button:hover {
+    background-color: rgb(241, 217, 217);
+}
+
+.pacote:hover {
+    color: rgb(255, 122, 122);
+}
+
+.tabela {
+    border: 1px;
+    border-color: black; 
+}
+
+.radio {
+    width: 10%; 
+    text-align: center;
+}
+
+#container {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    row-gap: 15px;
+}
+
+@media (min-width: 1200px) {
+    .tabela {
+        width: 50%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .tabela {
+        width: 70%;
+    }
+}
+
+@media (max-width: 767px) {
+    .tabela {
+        width: 100%;
+    }
+}
